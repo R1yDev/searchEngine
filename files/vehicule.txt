@@ -1,0 +1,14 @@
+vehicule voitures
+Les voitures particulières sont les véhicules les plus courants pour les déplacements quotidiens. Elles existent en plusieurs types : citadines, berlines, monospaces, breaks ou SUV. Les moteurs peuvent être à essence, diesel, électriques ou hybrides. Les constructeurs comme Renault, Peugeot, Volkswagen et Toyota dominent le marché européen. Une voiture offre confort, autonomie et capacité de transporter plusieurs personnes et leurs bagages.
+
+vehicule electriques
+Les véhicules électriques fonctionnent grâce à une batterie rechargeable et un moteur électrique. Ils ne produisent aucune émission polluante à l’usage, ce qui réduit l’impact sur la qualité de l’air. L’autonomie des modèles récents dépasse souvent 400 kilomètres. Le temps de recharge varie selon la puissance de la borne, de quelques minutes à plusieurs heures. De nombreuses marques, comme Tesla, Nissan ou Hyundai, proposent désormais des voitures électriques accessibles.
+
+vehicule transports commun
+Les transports en commun regroupent les bus, les tramways, les métros et les trains. Ils permettent de déplacer un grand nombre de voyageurs avec peu de véhicules, réduisant ainsi les embouteillages et la pollution. Les bus circulent sur les routes et desservent les quartiers d’une ville. Le métro est rapide et adapté aux grandes agglomérations. Le tramway, souvent électrique, est apprécié pour son silence et sa régularité.
+
+vehicule poids lourds
+Les poids lourds sont conçus pour transporter des marchandises sur de longues distances. Les camions, semi-remorques et porte-conteneurs peuvent charger plusieurs tonnes de fret. Ils sont équipés de moteurs diesel puissants et parfois de systèmes d’aide à la conduite. Les autoroutes leur sont souvent réservées pour éviter les zones urbaines. Le transport routier de marchandises est essentiel à l’économie, même s’il génère des émissions de CO₂.
+
+vehicule deux roues
+Les deux-roues motorisés (motos, scooters) et non motorisés (vélos) offrent une alternative agile pour se déplacer en ville. Les motos peuvent être routières, sportives ou tout-terrain. Les scooters sont pratiques pour les trajets courts grâce à leur boîte automatique et leur coffre intégré. Le vélo, électrique ou classique, est écologique et bon pour la santé. Le port du casque est obligatoire pour tous les conducteurs de deux-roues motorisés.
