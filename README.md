@@ -102,7 +102,6 @@ This will read `files/*.txt` and rebuild the corpus index in `data.txt`.
 ---
 
 ## Notes
-- ### IMPORTANT⚠️:
-the document search engine designed solely for the French language❗
+- ### IMPORTANT⚠️: the document search engine designed solely for the French language
 - Document images are searched in `files/` using base names (eg: `AI.jpg`, `cuisine.png`, etc.).
 - The evaluation tab is meant for demonstration with the built-in `TESTS_EVALUATION` set.
