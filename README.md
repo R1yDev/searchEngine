@@ -4,7 +4,7 @@ This project implements a small **document search engine** in Python. It support
 
 - **Vector model (TF‑IDF)** with **cosine similarity** ranking
 - **Boolean model** with operators **ET / OU / SAUF** (AND / OR / NOT)
-- **tokenization**(nltk.tokenizer) Delete the stop-list, replace the plural and conjugated verbs with their root.
+- **tokenization** (nltk.tokenizer) delete the stop-list, replace the plural and conjugated verbs with their root.
 - **Orthographic correction** (difflib) for query terms
 - **Synonym expansion** (for the vector model)
 - **Evaluation curve** (recall/precision) to analyze the performance of our system
