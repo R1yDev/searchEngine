@@ -1,15 +1,17 @@
-# Document Search Engine (TF‑IDF + Cosine + Boolean) Full Guide
+# Document Search Engine (TF‑IDF + Cosine + Boolean) with a graphical interface (GUI) [Full Guide]
 
 This project implements a small **document search engine** in Python. It supports:
 
 - **Vector model (TF‑IDF)** with **cosine similarity** ranking
 - **Boolean model** with operators **ET / OU / SAUF** (AND / OR / NOT)
-- **Orthographic correction** (difflib) for query terms
+- **Tokenization** delete the stop-list, replace the plural word and conjugated verbs with their root
+- A **Tkinter GUI** that shows results with document and a dynamic **score**
+- **Orthographic correction** (difflib) for query terms (given query/input)
 - **Synonym expansion** (for the vector model)
-- A **Tkinter GUI** that shows results with document thumbnails and a dynamic **score threshold**
-- **Evaluation view** (precision/recall curve) based on a small built-in test set
+- **evaluation curve** (recall/Accuracy) to analyze the performance of our system
 - **Query history** (historique.txt) and **similar query suggestions**
 - **Contextual re-ranking** (“Affiner”) based on a selected relevant document
+- A small AI algorithm that can display the image related to the given query.
 
 ---
 
@@ -18,7 +20,7 @@ This project implements a small **document search engine** in Python. It support
 ### 1) Data preprocessing
 Documents are created from text files located in `files/*.txt` and compiled into a single corpus file: `data.txt`.
 
-- Preprocessing script: `Prep&Creer.py` (generates `data.txt`)
+- Preprocessing script: `Prep&Creer.py` (it generates `data.txt`)
 - Each file becomes a dictionary of `{term: occurrences}`.
 
 ### 2) Models
@@ -35,12 +37,12 @@ Boolean search provides matching document sets using:
 - `SAUF` (difference)
 
 ### 3) Query understanding + GUI
-Implemented primarily in `interface_graphique.py`:
+Implemented  in `interface_graphique.py`:
 
-- Detect search mode: `auto` / forced `vect` / forced `bool`
+- Detect search mode: `auto` (if the vect or bool model not selected) / forced `vect` / forced `bool`
 - Correct query tokens using difflib against the TF‑IDF vocabulary
-- Expand synonyms for the vector model
-- Apply a user-controlled **threshold** on similarity score
+- Expand synonyms for the `vect` model
+- Apply a user-controlled **horizontal scroll bar** on similarity score
 - Show thumbnails from the `files/` folder when Pillow is installed
 
 ---
@@ -59,14 +61,11 @@ Implemented primarily in `interface_graphique.py`:
 ---
 
 ## Requirements
-
-Core (Python):
-- `tkinter` (usually included with Python on Windows)
-
-Optional:
-- `Pillow` (for thumbnails in the GUI)
-- `nltk` (used in preprocessing `Prep&Creer.py`; if you run it again)
-- `matplotlib` / `numpy` (for evaluation graph)
+# You should install : 
+-1) `tkinter` (usually included with Python on Windows)
+-2) `Pillow` (for thumbnails in the GUI)
+-3) `nltk` (used in preprocessing `Prep&Creer.py`; if you run it again)
+-4) `matplotlib` / `numpy` (for evaluation graph)
 
 ---
 
@@ -89,13 +88,6 @@ This will read `files/*.txt` and rebuild the corpus index in `data.txt`.
 ---
 
 ## Notes
-
-- Document images are searched in `files/` using base names (e.g. `AI.jpg`, `cuisine.png`, etc.).
-- If a thumbnail is missing, the GUI shows a placeholder.
+- #IMPORTANT⚠️: the document search engine designed solely for the French language❗
+- Document images are searched in `files/` using base names (eg: `AI.jpg`, `cuisine.png`, etc.).
 - The evaluation tab is meant for demonstration with the built-in `TESTS_EVALUATION` set.
-
----
-
-## License
-Add a license (e.g. MIT) if you want others to reuse the code.
-
