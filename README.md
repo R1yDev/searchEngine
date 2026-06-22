@@ -62,8 +62,8 @@ Implemented primarily in `interface_graphique.py`:
 ## Requirements
 ### You should install :
 - `tkinter` (usually included with Python on Windows)
-- `Pillow` (for thumbnails in the GUI)
-- `nltk` (used in preprocessing `Prep&Creer.py`; if you run it again)
+- `Pillow` (for small picture in the GUI)
+- `nltk` (used in preprocessing `Prep&Creer.py`)
 - `matplotlib` / `numpy` (for evaluation graph)
 
 ---
