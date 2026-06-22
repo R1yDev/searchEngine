@@ -66,7 +66,7 @@ Implemented  in `interface_graphique.py`:
 ```bash
   sudo apt update && sudo apt install -y python3-tk
 ```
- `Pillow` (for thumbnails in the GUI)
+ -`Pillow` (for graphical interface)
  ```bash
   python3 -m pip install Pillow
 ```
