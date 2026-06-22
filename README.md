@@ -1,4 +1,4 @@
-# Document Search Engine (TF‑IDF + Cosine + Boolean) with a graphical interface [Full Guide]
+# Document Search Engine (TF‑IDF + Cosine + Boolean) with a graphical interface (GUI) [Full Guide]
 
 This project implements a small **document search engine** in Python. It supports:
 
@@ -8,7 +8,7 @@ This project implements a small **document search engine** in Python. It support
 - **Orthographic correction** (difflib) for query terms
 - **Synonym expansion** (for the vector model)
 - **Evaluation curve** (recall/precision) to analyze the performance of our system
-- **Query history** (historique.txt) and **similar query suggestions**
+- **Query history** (historique.txt) and **similarity query suggestions**
 - **Contextual re-ranking** (“Affiner”) based on a selected relevant document
 - A small AI algorithm that can display the image related to the given query
 
@@ -38,11 +38,11 @@ Boolean search provides matching document sets using:
 ### 3) Query understanding + GUI
 Implemented primarily in `interface_graphique.py`:
 
-- Detect search mode: `auto` / forced `vect` / forced `bool`
+- Detect search mode: `auto` (if vect and bool models not selected) / forced `vect` / forced `bool`
 - Correct query tokens using difflib against the TF‑IDF vocabulary
 - Expand synonyms for the vector model
-- Apply a user-controlled **threshold** on similarity score
-- Show thumbnails from the `files/` folder when Pillow is installed
+- Apply a user-controlled **horizontal scroll bar** on similarity score
+- Show small picture from the `files/` folder when Pillow is installed
 
 ---
 
@@ -62,9 +62,9 @@ Implemented primarily in `interface_graphique.py`:
 ## Requirements
 ### You should install :
 -1 `tkinter` (usually included with Python on Windows)
-- `Pillow` (for thumbnails in the GUI)
-- `nltk` (used in preprocessing `Prep&Creer.py`; if you run it again)
-- `matplotlib` / `numpy` (for evaluation graph)
+-2 `Pillow` (for thumbnails in the GUI)
+-3 `nltk` (used in preprocessing `Prep&Creer.py`; if you run it again)
+-4 `matplotlib` / `numpy` (for evaluation graph)
 
 ---
 
@@ -87,6 +87,6 @@ This will read `files/*.txt` and rebuild the corpus index in `data.txt`.
 ---
 
 ## Notes
-### IMPORTANT: the document search engine designed solely for the French language
-- Document images are searched in `files/` using base names (e.g. `AI.jpg`, `cuisine.png`, etc.).
+- ### IMPORTANT: the document search engine designed solely for the French language.
+- Document images are searched in `files/` using base names (`AI.jpg`, `cuisine.png`, etc.).
 - The evaluation tab is meant for demonstration with the built-in `TESTS_EVALUATION` set.
