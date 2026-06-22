@@ -61,11 +61,15 @@ Implemented  in `interface_graphique.py`:
 ---
 
 ## Requirements
-# You should install : 
--1) `tkinter` (usually included with Python on Windows)
--2) `Pillow` (for thumbnails in the GUI)
--3) `nltk` (used in preprocessing `Prep&Creer.py`; if you run it again)
--4) `matplotlib` / `numpy` (for evaluation graph)
+### You should install : 
+- `tkinter` (usually included with Python on Windows)
+- ```bash
+  sudo apt update && sudo apt install -y python3-tk
+  python interface_graphique.py
+```
+- `Pillow` (for thumbnails in the GUI)
+- `nltk` (used in preprocessing `Prep&Creer.py`; if you run it again)
+- `matplotlib` / `numpy` (for evaluation graph)
 
 ---
 
